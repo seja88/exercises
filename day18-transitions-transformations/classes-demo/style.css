@@ -1,0 +1,41 @@
+.messages {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.message {
+    display: flex;
+    padding: 0.5em;
+}
+
+.message__text {
+    margin-right: auto;
+}
+
+.message--success {
+    background-color: #c9ffc9;
+}
+
+.message--error {
+    background-color: #ffa2a2;
+}
+
+.message--warning {
+    background-color: #ffdd8e;
+}
+
+.message--minimized {
+    align-self: flex-start;
+}
+
+.message--minimized > * {
+    display: none;
+}
+
+.message--minimized .message__minimize {
+    display: inline;
+}

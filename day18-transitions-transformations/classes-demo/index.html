@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes demonstration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Classes demonstration</h1>
+
+    <div class="messages"></div>
+
+    <script src="Message.js"></script>
+    <script>
+        const first_message = new Message('The operation was successful');
+        first_message.display();
+
+        const second_message = new Message('The patient died', 'error');
+        second_message.display();
+
+        const third_message = new Message('You should be more careful next time.', 'warning', true);
+        third_message.display();
+
+        (new Message('Hello there', 'error')).display();
+    </script>
+
+</body>
+</html>
