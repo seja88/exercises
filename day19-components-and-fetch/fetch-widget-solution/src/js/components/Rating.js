@@ -5,7 +5,7 @@ export class Rating {
         this.ratingValue = properties.startingValue;
         this.ratingSubject = properties.subject;
 
-        this.myApiKey = "3e942f46"
+        this.myApiKey = ""
         this.stars = null
         this.refreshRatingWidget()
     }
