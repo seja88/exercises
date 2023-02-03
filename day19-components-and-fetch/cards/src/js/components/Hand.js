@@ -27,8 +27,6 @@ export class Hand {
             const card1 = new Card(cardData)
             this.element.appendChild(card1.element)
         })
-
-        this.element.querySelector('button').addEventListener('click', this.dropFirst)
     }
 
     // dropFirst = () => {
