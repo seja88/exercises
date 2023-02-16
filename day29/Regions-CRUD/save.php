@@ -10,15 +10,13 @@ $id = $_GET['id'] ?? null;
 
 if (isset($id)) {
     $region = DB::selectOne("select * from `regions` where `id` = ?", [$id], Region::class);
-    $region->name = "Updated Region";
-    $region->slug = "updated-region";
-    $region->update();
 } else {
     $region = new Region();
-    $region->name = 'Central Africa';
-    $region->slug = 'central-africa';
-    $region->insert();
 }
+
+$region->name = 'Central Africa';
+$region->slug = 'central-africa';
+$region->save();
 
 echo '<pre>';
 var_export($region);
