@@ -1,0 +1,12 @@
+{
+    "name": "jpola/composer-project",
+    "authors": [
+        {
+            "name": "Jan Polak",
+            "email": "jan.polak@onmyway.cz"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.5"
+    }
+}
